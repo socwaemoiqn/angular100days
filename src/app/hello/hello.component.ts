@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
 
+  user:any = {
+    name: 'Viet',
+    age: 23
+  };
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showAlert():void{
+    alert('You are clicked!');
   }
 
 }
