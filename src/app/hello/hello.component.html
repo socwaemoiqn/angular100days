@@ -2,6 +2,7 @@
 <p>hello Component</p>
 
 <!-- Day 3: ANGULAR DATA BINDING -->
+<h1>Day 3: ANGULAR DATA BINDING</h1>
 
 <!-- INTERPOLATION -->
 <p>Name: {{ user.name }}</p>
@@ -16,7 +17,21 @@ Input here: <input type="text" [value]="user.name">
 <br><br>
 
 <!-- TWO-WAY BINDING -->
-Two way binding: <input type="text" [(ngModel)]="user.name">
+<b>(TWO-WAY BINDING)</b> Input name: <input type="text" [(ngModel)]="user.name">
 <!-- Two-way binding chính là kết hợp của binding dữ liệu từ class ra template thông qua property binding,
      và từ template vào class thông qua event binding -->
 <br><br>
+
+<!-------------------------------------------------------------------->
+
+<!-- Day 4: ANGULAR STRUCTURE DIRECTIVE - NGIF -->
+<h1>Day 4: ANGULAR STRUCTURE DIRECTIVE - NGIF</h1>
+
+<!-- DIRECTIVE NG-IF -->
+<b>(DIRECTIVE NG-IF)</b> Input age: <input type="text" [(ngModel)]="user.age">
+<div *ngIf="user.age > 15">
+    Đây là nội dung dành cho người trên 15 tuổi.
+</div>
+<div *ngIf="user.age < 15">
+    Đây là nội dung dành cho người dưới 15 tuổi.
+</div>
