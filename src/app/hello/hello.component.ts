@@ -11,6 +11,24 @@ export class HelloComponent implements OnInit {
     name: 'Viet',
     age: 23
   };
+
+  users:any = [{
+    id: 1,
+    name: 'Viet',
+    age: 23,
+    gender: "male"
+  },{
+    id: 2,
+    name: 'Dong Choi',
+    age: 15,
+    gender: "female"
+  },
+  {
+    id: 3,
+    name: 'Tung Núi',
+    age: 12,
+    gender: "female"
+  }];
   constructor() { }
 
   ngOnInit(): void {

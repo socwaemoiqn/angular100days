@@ -35,3 +35,19 @@ Input here: <input type="text" [value]="user.name">
 <div *ngIf="user.age < 15">
     Đây là nội dung dành cho người dưới 15 tuổi.
 </div>
+
+<!-- Day 5: ANGULAR STRUCTURE DIRECTIVE NGFOROF -->
+<h1>Day 5: ANGULAR STRUCTURE DIRECTIVE NGFOROF</h1>
+
+<!-- DIRECTIVE NG-FOR -->
+<div class="users-container">
+    <p *ngFor="let user of users; index as ids; count as total;">
+       <span *ngIf="user.age > 12">
+        ({{ ids + 1}}/{{ total }}): {{ user.id }} - {{ user.name }}
+       </span>
+    </p>
+</div>
+
+<!-- MỘT SỐ LOCAL VARIABLE TRONG MỘT NGFOROF TEMPLATE -->
+<h3>MỘT SỐ LOCAL VARIABLE TRONG MỘT NGFOROF TEMPLATE</h3>
+<div><img src="assets\images\Annotation 2020-08-26 155712.png" alt=""></div>
